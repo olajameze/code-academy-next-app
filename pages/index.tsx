@@ -3,6 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Product from "../components/product";
 
+const products = ["T-Shirt", "Vest", "Hoodie"];
+
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
@@ -17,12 +19,12 @@ export default function Home() {
       </Head>
 
       <header className="h-16 px-8 bg-blue-600 text-white w-full text-center sticky top-0 flex items-center justify-center">
-	<span>HEADER</span>
+        <span>HEADER</span>
 
-  <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center text-blue-600 ">
-  <span className="material-icons items-center">face</span>
-</div>
- </header>
+        <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center text-blue-600 ">
+          <span className="material-icons items-center">face</span>
+        </div>
+      </header>
 
       <main className="py-20 flex flex-col flex-1 justify-center items-center">
         <h1 className="m-0 leading-snug text-6xl text-center">
@@ -42,17 +44,18 @@ export default function Home() {
           </code>
         </p>
 
-<div className="mt-10 flex flex-wrap flex-col sm:flex-row w-full sm:max-w-3xl justify-center items-center">
-
-<Product name="T-shirt" />
-<Product name="Vest" />
-<Product name="Hoodie" />
-<Product name="Shorts" />
-<Product name="Shirt" />
-<Product name="Trousers" />
-
-</div>
-
+        <div className="mt-10 flex flex-wrap flex-col sm:flex-row w-full sm:max-w-3xl justify-center items-center">
+          {products.map((p, i) => (
+            <Product
+              id={i + 1}
+              key={p}
+              name={p}
+              category={1}
+              cost={10}
+              image={i % 4}
+            />
+          ))}
+        </div>
       </main>
 
       <footer className="w-full h-24 flex justify-center items-center border-t border-solid border-gray-200">

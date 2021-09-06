@@ -5,17 +5,15 @@ import Product from "../components/product";
 import { useEffect, useState } from "react";
 import { IProduct } from "../models/product";
 
-const [products, setProducts] = useState<IProduct[]>([]);
-
-useEffect(() => {
-  const fetchProducts = async () => {
-    const res = await (await fetch(`api/products`)).json();
-    setProducts(res);
-  };
-  fetchProducts();
-}, []);
-
 export default function Home() {
+  const [products, setProducts] = useState<IProduct[]>([]);
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const res = await (await fetch(`api/products`)).json();
+      setProducts(res);
+    };
+    fetchProducts();
+  }, []);
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
       <Head>

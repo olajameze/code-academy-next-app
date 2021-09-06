@@ -2,8 +2,18 @@ import classNames from "classnames";
 import Head from "next/head";
 import Image from "next/image";
 import Product from "../components/product";
+import { useEffect, useState } from "react";
+import { IProduct } from "../models/product";
 
-const products = ["T-Shirt", "Vest", "Hoodie"];
+const [products, setProducts] = useState<IProduct[]>([]);
+
+useEffect(() => {
+  const fetchProducts = async () => {
+    const res = await (await fetch(`api/products`)).json();
+    setProducts(res);
+  };
+  fetchProducts();
+}, []);
 
 export default function Home() {
   return (
@@ -44,16 +54,9 @@ export default function Home() {
           </code>
         </p>
 
-        <div className="mt-10 flex flex-wrap flex-col sm:flex-row w-full sm:max-w-3xl justify-center items-center">
+        <div className="mt-10 flex flex-wrap flex-col sm:flex-row w-full justify-center items-center">
           {products.map((p, i) => (
-            <Product
-              id={i + 1}
-              key={p}
-              name={p}
-              category={1}
-              cost={10}
-              image={i % 4}
-            />
+            <Product key={p.id} {...p} />
           ))}
         </div>
       </main>

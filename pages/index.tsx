@@ -1,6 +1,7 @@
+import classNames from "classnames";
 import Head from "next/head";
 import Image from "next/image";
-import Card from "../components/card";
+import Product from "../components/product";
 
 export default function Home() {
   return (
@@ -41,28 +42,17 @@ export default function Home() {
           </code>
         </p>
 
-        <div className="mt-10 flex flex-wrap flex-col sm:flex-row w-full sm:max-w-3xl justify-center items-center">
-          <Card
-            href="https://nextjs.org/docs"
-            header="Documentation"
-            content="Find in-depth information about Next.js features and API"
-          />
-          <Card
-            href="https://nextjs.org/learn"
-            header="Learn"
-            content="Learn about Next.js in an interactive course with quizzes!"
-          />
-          <Card
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            header="Examples"
-            content="Discover and deploy boilerplate example Next.js projects."
-          />
-          <Card
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            header="Deploy"
-            content="Instantly deploy your Next.js site to a public URL with Vercel."
-          />
-        </div>
+<div className="mt-10 flex flex-wrap flex-col sm:flex-row w-full sm:max-w-3xl justify-center items-center">
+
+<Product name="T-shirt" />
+<Product name="Vest" />
+<Product name="Hoodie" />
+<Product name="Shorts" />
+<Product name="Shirt" />
+<Product name="Trousers" />
+
+</div>
+
       </main>
 
       <footer className="w-full h-24 flex justify-center items-center border-t border-solid border-gray-200">

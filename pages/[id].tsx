@@ -14,6 +14,8 @@ export default function ProductDetail() {
     image: 0,
   };
 
+  const details = [];
+
   return (
     <main className="px-10 py-6 flex flex-col flex-1">
       <Product {...product} />

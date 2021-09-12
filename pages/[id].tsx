@@ -14,6 +14,14 @@ export default function ProductDetail() {
     image: 0,
   };
 
+  const productSelection = product.find((product: { IProduct: any; }) => {product.IProduct == Product);
+
+  /*function productionSelected() {
+return Product;
+    }*/
+
+  console.log(typeof product);
+
   return (
     <main className="px-10 py-6 flex flex-col flex-1">
       <Product {...product} />

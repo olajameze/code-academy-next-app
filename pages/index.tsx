@@ -26,13 +26,7 @@ export default function Home() {
         />
       </Head>
 
-      <header className="h-16 px-8 bg-blue-600 text-white w-full text-center sticky top-0 flex items-center justify-center">
-        <span>HEADER</span>
-
-        <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center text-blue-600 ">
-          <span className="material-icons items-center">face</span>
-        </div>
-      </header>
+      <div className="Nav"></div>
 
       <main className="py-20 flex flex-col flex-1 justify-center items-center">
         <h1 className="m-0 leading-snug text-6xl text-center">

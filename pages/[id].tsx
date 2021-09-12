@@ -14,7 +14,7 @@ export default function ProductDetail() {
     image: 0,
   };
 
-  const productSelection = product.find((product: { IProduct: any; }) => {product.IProduct == Product);
+  //const productSelection = product.find((product: { IProduct: any; }) => {product.IProduct == Product);
 
   /*function productionSelected() {
 return Product;

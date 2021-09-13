@@ -26,8 +26,6 @@ export default function Home() {
         />
       </Head>
 
-      <div className="Nav"></div>
-
       <main className="py-20 flex flex-col flex-1 justify-center items-center">
         <h1 className="m-0 leading-snug text-6xl text-center">
           Welcome to{" "}

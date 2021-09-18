@@ -28,19 +28,18 @@ export default function Home() {
 
       <main className="py-20 flex flex-col flex-1 justify-center items-center">
         <h1 className="m-0 leading-snug text-6xl text-center">
-          Welcome to{" "}
+          Welcome to My Website{" "}
           <a
             className="text-blue-600 no-underline hover:underline focus:underline"
             href="https://nextjs.org"
           >
-            Next.js!
           </a>
         </h1>
 
         <p className="leading-normal text-2xl text-center">
-          Get started by editing{" "}
+          Latest Clothing Products.
           <code className="bg-gray-100 rounded-md p-3 text-lg font-mono">
-            pages/index.js
+
           </code>
         </p>
 
@@ -51,7 +50,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="w-full h-24 flex justify-center items-center border-t border-solid border-gray-200">
+      <footer className="w-full h-24 flex justify-center items-center bg-blue-600 border-t border-solid border-gray-200 position-fixed">
         <a
           className="flex flex-1 justify-center items-center"
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

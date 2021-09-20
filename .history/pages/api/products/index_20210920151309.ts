@@ -26,6 +26,6 @@ const { db } = getDB(
 
 );
 
-const result = await db.query(<"SELECT * FROM customer LIMIT 1;">);
+const result = await db.query(<"SELECT * FROM customer LIMIT 1">)
 
 console.log(result);

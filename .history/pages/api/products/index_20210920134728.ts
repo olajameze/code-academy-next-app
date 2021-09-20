@@ -22,10 +22,8 @@ export default async function handler(
   res.status(200).json(products);
 }
 
-const { db } = getDB(
+const { db } = getDB();
 
-);
-
-const result = await db.query(<"SELECT * FROM customer LIMIT 1;">);
+const result = await db.query(<"SELECT * FROM customer LIMIT 1">)
 
 console.log(result);

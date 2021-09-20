@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { IProduct } from "../../../models/product";
-import { getDB } from "../../../db/init-db";
+import { getDB } from "\Users\olago_000\Desktop\starter\code_academy_next_app\pages\db";
 
 export const products = Array(100)
   .fill(0)
@@ -26,6 +26,6 @@ const { db } = getDB(
 
 );
 
-const result = await db.query(<"SELECT * FROM customer LIMIT 1;">);
+const result = await db.query(<"SELECT * FROM customer LIMIT 1">);
 
 console.log(result);

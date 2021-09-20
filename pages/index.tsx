@@ -26,9 +26,9 @@ export default function Home() {
         />
       </Head>
 
-      <main className="py-20 flex flex-col flex-1 justify-center items-center">
+      <main className="py-20 flex flex-col flex-1 justify-center items-center bg-purple-200">
         <h1 className="m-0 leading-snug text-6xl text-center">
-          Welcome to My Website{" "}
+          Welcome to My Project.{" "}
           <a
             className="text-blue-600 no-underline hover:underline focus:underline"
             href="https://nextjs.org"
@@ -37,10 +37,8 @@ export default function Home() {
         </h1>
 
         <p className="leading-normal text-2xl text-center">
-          Latest Clothing Products.
-          <code className="bg-gray-100 rounded-md p-3 text-lg font-mono">
+          Thank you for this amazing experience...
 
-          </code>
         </p>
 
         <div className="mt-10 flex flex-wrap flex-col sm:flex-row w-full justify-center items-center">
@@ -50,14 +48,17 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="w-full h-24 flex justify-center items-center bg-blue-600 border-t border-solid border-gray-200 position-fixed">
+      <footer className="w-full h-24 flex justify-center items-center bg-purple-500 border-t border-solid border-gray-200 position-fixed-absolute bottom-0 sticky top-0 flex">
         <a
           className="flex flex-1 justify-center items-center"
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
+          <small>&copy; Copyright 2021, Sidetrade Code Academy</small>{" "}
+
           Powered by{" "}
+
           <span className="h-4 ml-2">
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>

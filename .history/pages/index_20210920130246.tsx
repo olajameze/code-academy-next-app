@@ -26,7 +26,7 @@ export default function Home() {
         />
       </Head>
 
-      <main className="py-20 flex flex-col flex-1 justify-center items-center bg-purple-300">
+      <main className="py-20 flex flex-col flex-1 justify-center items-center bg-purple-200">
         <h1 className="m-0 leading-snug text-6xl text-center">
           Welcome to My Project.{" "}
           <a

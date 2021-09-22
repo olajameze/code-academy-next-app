@@ -35,10 +35,22 @@ const Navbar = () => {
 
                             <button>
                                 <FaIcons.FaBars onClick={showSidebar} />
+
+                                function myFunction() {
+                                    document.getElementById("myDIV");
+                                let button = document.getElementById("myDIV")
+                             }
+
+                                if (x.style.display === "none") {
+                                    x.style.display = "block"
+                                }
+                                else {
+                                    x.style.display = "none"
+                                }
+
+
                             </button>
                         </div>
-
-                        <button onClick={() => setShow(false)}>Hide</button>
 
                         <div className="font-normal md:font-bold rounded-md bg-red-500-opacity-75 border-solid border-4 border-blue-500 border-opacity-25 hover:bg-purple-500 text-center truncate text-white no-underline hover:underline">
                             <ul>
@@ -57,8 +69,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-function setShow(arg0: boolean): void {
-    throw new Error('Function not implemented.');
-}
 

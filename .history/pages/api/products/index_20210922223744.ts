@@ -29,7 +29,3 @@ const { db } = getDB(
 (async () => { const result = await db.query("SELECT * FROM customer LIMIT 1;"); })();
 
 console.log(result);
-function result(result: any) {
-  throw new Error("Function not implemented.");
-}
-

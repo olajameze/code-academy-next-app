@@ -1,4 +1,4 @@
-import type { NextApiRequest, NextApiResponse } from "next";
+/*import type { NextApiRequest, NextApiResponse } from "next";
 import { IProduct } from "../../../models/product";
 import { getDB } from "../../../db/init-db";
 
@@ -26,10 +26,10 @@ const { db } = getDB(
 
 );
 
-(async () => { const result = await db.query("SELECT * FROM customer LIMIT 1;"); })();
+//(async () => { const result = await db.query("SELECT * FROM customer LIMIT 1;"); })();
 
-console.log(result);
-function result(result: any) {
-  throw new Error("Function not implemented.");
-}
+//console.log(result);
+//function result(result: any) {
+ // throw new Error("Function not implemented.");
+//}
 

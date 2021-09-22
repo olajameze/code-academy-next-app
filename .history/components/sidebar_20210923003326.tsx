@@ -58,7 +58,3 @@ const Navbar = () => {
 
 export default Navbar;
 
-function setShow(arg0: boolean): void {
-    throw new Error('Function not implemented.');
-}
-

@@ -40,14 +40,7 @@ const Navbar = () => {
 
 
                         <div className="transition transform hover:-translate-y-1 motion-reduce:transition-none flex cursor-pointer rounded-full py-3 px-6 border-double border-4 border-blue-500 border-opacity-45 bg-red-500-opacity-75 hover:bg-blue-700 focus:out</div>line-none focus:ring-2">
-
-                            <div>
-                                Hide
-                            </div>
-
-                            <button>
-                                <FaIcons.FaTimes onClick={() => setShow(false)} />
-                            </button>
+                            <button onClick={() => setShow(false)}>Hide</button>
                         </div>
 
                         <div className="font-normal md:font-bold rounded-md bg-red-500-opacity-75 border-solid border-4 border-blue-500 border-opacity-25 hover:bg-purple-500 text-center truncate text-white no-underline hover:underline">

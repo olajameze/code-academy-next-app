@@ -22,7 +22,7 @@ export default async function handler(
   res: NextApiResponse<IProduct[]>
 ) {
   const { db } = getDB();
-  const result = await db.query(`SELECT * FROM SCHEMA CodeAcademy ORDER BY product_id;`);
+  const result = await db.query(argo: any);
   console.log(result);
 
   res.status(200).json(products);
@@ -31,4 +31,8 @@ export default async function handler(
 const { db } = getDB(
 
 );
+
+function arg0(arg0: any, any: any) {
+  throw new Error("Function not implemented.");
+}
 

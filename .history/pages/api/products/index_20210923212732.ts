@@ -22,7 +22,7 @@ export default async function handler(
   res: NextApiResponse<IProduct[]>
 ) {
   const { db } = getDB();
-  const result = await db.query(`SELECT * FROM SCHEMA CodeAcademy ORDER BY product_id;`);
+  const result = await db.query(`SELECT * FROM CodeAcademySchema.product ORDER BY product_id;`);
   console.log(result);
 
   res.status(200).json(products);

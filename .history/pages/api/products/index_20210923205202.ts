@@ -15,20 +15,22 @@ export const products = Array(100)
     };
   });
 
-
-
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<IProduct[]>
 ) {
-  const { db } = getDB();
-  const result = await db.query(`SELECT * FROM SCHEMA CodeAcademy ORDER BY product_id;`);
-  console.log(result);
-
+  const result = await db.query("SELECT * FROM customer LIMIT 1;");
   res.status(200).json(products);
 }
 
 const { db } = getDB(
 
 );
+
+//(async () => { const result = await db.query("SELECT * FROM customer LIMIT 1;"); })();
+
+console.log(result);
+function result(result: any) {
+  throw new Error("Function not implemented.");
+}
 

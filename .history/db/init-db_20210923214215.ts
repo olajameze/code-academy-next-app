@@ -13,6 +13,7 @@ export function createSingleton<T>(name: string, create: () => T): T {
 const pgp = pgLib();
 
 interface IDatabaseScope {
+
     db: pgLib.IDatabase<any>;
 }
 
